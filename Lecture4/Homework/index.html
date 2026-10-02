@@ -4,20 +4,31 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Page Title</title>
-    <link rel='stylesheet' href='main.css'>
+    <link rel='stylesheet' href='./styles/styles.css'>
 </head>
 <body>
     <div class="wrapper">
-        <header>
+        <header id="header">
+            <a href="#header">
+                <img class="logo" src="./assets/images/logo.png" alt="logo image">
+            </a>
+            
             <nav>
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="#forum">Форум</a></li>
+                    <li><a href="feed">Стрічка</a></li>
+                    <li><a href="salaries">Зарплати</a></li>
+                    <li><a href="work">Робота</a></li>
+                    <li><a href="calendar">Календар</a></li>
                 </ul>
             </nav>
+
+            <form>
+                <input placeholder="Що шукаємо?" id="query" type="search">
+                <button type="submit">Знайти</button>
+            </form>
+
+            <a href="">Вхід і реєстрація</a>
         </header>
     </div>
 </body>
