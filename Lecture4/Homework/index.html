@@ -16,10 +16,10 @@
             <nav>
                 <ul>
                     <li><a href="#forum">Форум</a></li>
-                    <li><a href="feed">Стрічка</a></li>
-                    <li><a href="salaries">Зарплати</a></li>
-                    <li><a href="work">Робота</a></li>
-                    <li><a href="calendar">Календар</a></li>
+                    <li><a href="#work">Робота</a></li>
+                    <li><a href="#calendar">Календар</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li><a href="#about-us">Про нас</a></li>
                 </ul>
             </nav>
 
@@ -30,6 +30,211 @@
 
             <a href="">Вхід і реєстрація</a>
         </header>
+
+        <main>
+            <section class="content" id="forum">
+                <h2>Форум</h2>
+                <h3>Статті</h3>
+
+                <section>
+                    <h3>Mamay на Neural Engine: як я запускав українську LLM на iPhone через Core ML</h3>
+                    <p>Я хотів, щоб українськомовна модель працювала на iPhone повністю офлайн, без сервера й без підписки. Чому локальні моделі — це насамперед про приватність і контроль, добре пояснює Юрій Гуц у статті на DOU [15]; він пише про Mac і десктопи, а мене цікавив телефон. MamayLM від INSAIT [1] для цього добре підходить: це дообучена Gemma 3 на 4 млрд параметрів, яка вміщується в телефон. Через MLX і llama.cpp вона в мене вже працювала, обидва варіанти рахують на GPU. Лишався третій шлях — Neural Engine (ANE), окремий прискорювач для нейромереж, який має бути ощадливішим. Я хотів перевірити, чи можна перенести на нього Mamay готовими відкритими інструментами, без власного конвертера, і що це дасть на реальному телефоні.</p>
+                </section>
+
+                <section>
+                    <h3>SKILLs.md для QA: як навчити AI писати автотести на Playwright саме такі, як тобі треба</h3>
+                    <p>Не боріться з кожною помилкою AI-агента окремо. Повторювані помилки перетворюйте на правила, а правила — на skill. AI справді може значно спростити роботу QA Automation Engineer. Він швидко розбирається в репозиторії, знаходить потрібний компонент, розбирається в API, пише новий тест і навіть самостійно його запускає. AI може працювати з тестом ще послідовніше. Наприклад, у CodeceptJS через MCP-інтеграцію агент може виконувати тест покроково прямо в браузері: виконати дію, перевірити результат і лише після успішної перевірки додати цей крок у тест. Або в Claude Code за допомогою розширення Chrome або Firefox. Це більше схоже на те, як тест створює людина: спочатку проклікує сценарій, перевіряє результат кожного кроку, а потім фіксує робочий варіант у коді.</p>
+                </section>
+
+                <section>
+                    <h3>Як я створюю редактор для фотографів, що автоматизує ретуш</h3>
+                    <p>Привіт, спільното! Я Ігор, full-stack розробник. Ідея Glow виникла після розмови з дружиною про час, який вона витрачає на ретуш фотографій. Я взявся автоматизувати частину цієї роботи, а в процесі отримав задачі, які вже мало нагадували звичайний вебзастосунок: кілька inference runtime, великі буфери зображень, узгодження прев’ю з експортом і нестабільну паралельну роботу з GPU.</p>
+                </section>
+            </section>
+
+            <section class="content" id="work">
+                <h2>Робота</h2>
+                <h3>Вакансії</h3>
+
+                <label for="select-position">Оберіть посаду</label>
+                <select name="select-position" id="select-position">
+                    <option value="">Front-End</option>
+                    <option value="">Back-End</option>
+                    <option value="">Full-Stack</option>
+                    <option value="">ProjectManager</option>
+                    <option value="">QA tester</option>
+                </select>
+
+                 <form>
+                    <input placeholder="Посада, мова, компанія, місто, країна. Наприклад, React Київ" id="query" type="search">
+                    <button type="submit">Знайти</button>
+                    <input type="checkbox" id="find-description">
+                    <label for="find-description">шукати в описах вакансій</label>
+                </form>
+
+                <section>
+                    <h3>Java</h3>
+                    <a href="">Trainee java developer</a>
+                    <br>
+                    <a href="">Junior java developer</a>
+                    <br>
+                    <a href="">Middle java developer</a>
+                    <br>
+                    <a href="">Senior java developer</a>
+                </section>
+
+                <section>
+                    <h3>Python</h3>
+                    <a href="">Trainee python developer</a>
+                    <br>
+                    <a href="">Junior python developer</a>
+                    <br>
+                    <a href="">Middle python developer</a>
+                    <br>
+                    <a href="">Senior python developer</a>
+                </section>
+
+                <section>
+                    <h3>PHP</h3>
+                    <a href="">Trainee PHP developer</a>
+                    <br>
+                    <a href="">Junior PHP developer</a>
+                    <br>
+                    <a href="">Middle PHP developer</a>
+                    <br>
+                    <a href="">Senior PHP developer</a>
+                </section>
+
+                <section>
+                    <h2>C++</h2>
+                    <a href="">Trainee C++ developer</a>
+                    <br>
+                    <a href="">Junior C++ developer</a>
+                    <br>
+                    <a href="">Middle C++ developer</a>
+                    <br>
+                    <a href="">Senior C++ developer</a>
+                </section>
+            </section>
+
+            <section class="content" id="calendar">
+                <h2>Календар</h2>
+                <h3>10/2026</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Пн</td>
+                            <td>Вт</td>
+                            <td>Ср</td>
+                            <td>Чт</td>
+                            <td>Пт</td>
+                            <td>Сб</td>
+                            <td>Нд</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+
+                         <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+
+                         <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+
+                         <tr>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                        </tr>
+
+                         <tr>
+                            <td>30</td>
+                            <td>31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="content" id="reviews">
+                <h3>Відгуки</h3>
+                <form action="">
+                    <label for="your-name">введіть ваше ім'я</label>
+                    <br>
+                    <input type="text" name="your-name">
+                    <br>
+                    <label for="enter-your-review">Напишіть відгук</label>
+                    <br>
+                    <textarea name="enter-your-review"></textarea>
+                    <br>
+                    <input type="submit">
+                </form>
+
+                <br>
+                <h4>Daniel</h4>
+                <p>Дуже якісний сайт для пошуку роботи!</p>
+                <br>
+
+                <h4>Victor</h4>
+                <p>Дякую за допомогу в пошуку роботи.</p>
+                <br>
+
+                <h4>Євгеній</h4>
+                <p>Дуже якісна тех-підтримка</p>
+                <br>
+
+                <h4>Владислав</h4>
+                <p>Дуже багато вакансій, величезний вибір</p>
+            </section>
+        </main>
+
+        <section id="about-us">
+            <h2>Про нас</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BIhlh6MzOuc?si=teiYWLIe6p0wtvoV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <footer>
+          <p>2026</p>
+          <a href="jobs.dou.ua">DOU.ua</a>
+
+          <section>
+            <h3>Ми в соц-мережах</h3>
+            <a href="">TikTok</a>
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+          </section>
+        </footer>
     </div>
 </body>
 </html>
