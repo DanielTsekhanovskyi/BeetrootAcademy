@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Admin</title>
+    <link rel='stylesheet' href='./styles/styles.css'>
+</head>
+
+<body>
+    <h1>IT Shop Admin panel</h1>
+    <br>
+    
+    <form id="created-product-form" style="display: flex; flex-direction: column; width: 300px;">
+        <label>title</label>
+        <input type="text" name="title" id="title">
+        
+        <br>
+
+        <label>version</label>
+        <input type="number" name="version" id="version">
+    
+        <br>
+
+        <label for="model">Model</label>
+        <select name="model" id="model">
+            <optgroup label="AMD">
+                <option>AMD</option>
+                <option>AMD2</option>
+                <option>AMD3</option>
+            </optgroup>
+
+            <optgroup label="Intel">
+                <option>Intel</option>
+                <option>Intel2</option>
+                <option>Intel3</option>
+            </optgroup>
+        </select>
+
+        <br>
+
+        <fieldset id="product-used">
+            <legend>New or used?</legend>
+
+            <input type="radio" name="product-used" id="product-new" value="new">
+            <label for="product-new">New</label>
+
+            <input type="radio" name="product-used" id="product-used" value="used">
+            <label for="product-used">Used</label>
+        </fieldset>
+
+        <br>
+
+        <button id="create-product-button">Create</button>
+    </form>
+
+    <br>
+
+    <div id="product-list" style="width: 500px;">
+        <h2>Product list</h2>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
