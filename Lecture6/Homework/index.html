@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Побудова форм</title>
+    <link rel='stylesheet' href='./styles/styles.css'>
+</head>
+<body>
+    <form style="display: flex; flex-direction: column; width: 300px;">
+        <label for="firstname">Firstname</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Enter user firstname" required>
+
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Enter user lastname" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter yout email" required>
+
+        <label for="user-password">Password</label>
+        <input type="password" name="user-password" id="user-password" placeholder="Enter your password" required>
+
+        <label for="user-password-2">Password (again)</label>
+        <input type="password" name="user-password-2" id="user-password-2" placeholder="Enter your password again" required>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" name="gender" id="male-gender" required>
+            <label for="male-gender">Male</label>
+
+            <input type="radio" name="gender" id="female-gender">
+            <label for="female-gender">Female</label>
+        </fieldset>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Enter your age" required>
+
+        <label for="course">Course</label>
+        <select id="course" required>
+            <option disabled selected>Enter your course</option>
+
+            <option value="frontend">Front-End</option>
+            <option value="backend">Back-End</option>
+            <option value="pm">Project Manager</option>
+            <option value="qa">QA Automatic</option>
+        </select>
+
+        <label for="">Adress</label>
+        <textarea name="adress" id="adress" placeholder="Enter your full adress. Country, region, city/town, street" required></textarea>
+
+        <input type="checkbox" name="personal-data-access" id="personal-data-access" required>
+        <label for="personal-data-access">I consent to the processing of my personal data</label>
+
+        <button type="submit">Register</button>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
