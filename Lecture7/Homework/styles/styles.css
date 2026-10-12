@@ -26,6 +26,7 @@
 
 .header-navigation a:hover {
     color: var(--Black, #070707);
+    font-weight: bold;
 }
 
 .site-header hr {
@@ -159,6 +160,10 @@
     display: flex;
     align-items: flex-start;
     gap: 50px;
+}
+
+.social-group img:hover {
+    opacity: 0.5;
 }
 
 .footer-text {
