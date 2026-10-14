@@ -1,0 +1,148 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header img, 
+header .header-nav,
+header .header-nav>ul>li, 
+header .auth-actions {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+header {
+    text-align: center;
+    padding: 17px 120px;
+}
+
+header img {
+    float:left;
+}
+
+.auth-actions {
+    float: right;
+}
+
+.header-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-nav ul li {
+    margin-right: 20px;
+}
+
+.header-nav a,
+.auth-actions a,
+.sign-up-button {
+    text-decoration: none;
+}
+
+.header-nav a {
+    color: #2F281E;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.auth-actions a,
+.sign-up-button {
+    margin-left: 32px;
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
+.auth-actions a:nth-child(1) {
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    color: var(--text, #2F281E);
+}
+
+.auth-actions a:nth-child(2),
+.sign-up-button
+ {
+    color: #FFF;
+    border-radius: 4px;
+    background: var(--Orange, #F90);
+}
+
+.hero {
+    overflow: hidden;
+    margin: 70px 120px 100px;
+}
+
+.section1-left-side {
+    float: left;
+    width: 45%;
+}
+
+.people-img {
+    float: right;
+    width: 50%;
+}
+
+.section1-left-side h2 {
+    color: #2F281E;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.section1-left-side p {
+    color: #544837;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.tools-title {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.hero p {
+    margin: 30px 0 40px 0;
+}
+
+.hero-button {
+    padding: 13px 40px;
+    border-radius: 4px;
+    background: var(--Orange, #F90);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tools-section {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%; 
+    margin: 0 1%; 
+    font-size: 16px; 
+    text-align: left;
+}
+
+.tools {
+    margin-left: 100px;
+    margin-right: 100px
+}
+
+.tools-section h4 {
+    font-size: 22px;
+    color: #2F281E;
+    margin-bottom: 15px;
+}
+
+.tools-item p {
+    color: #544837;
+    line-height: 26px;
+}
+
+.sign-up-button {
+    display: block;
+    margin: 70px auto;
+    width: fit-content;
+}
