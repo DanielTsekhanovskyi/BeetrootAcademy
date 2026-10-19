@@ -10,7 +10,7 @@
 <body>
             <!-- Site navigation -->
     <header>
-        <nav class="navigation">
+        <nav class="flex justify-center align-center navigation">
             <a class="navigation-link text text-gray" href="#home">Home</a>
             <a class="navigation-link text text-gray" href="#about">About me</a>
             <a class="navigation-link text text-gray" href="#skills">Skills</a>
@@ -46,95 +46,128 @@
         </section>  
 
         <!-- Skills -->
-        <section class="padding-inline" id="skills">
-            <h2 class="title title-m">Skills</h2>
-            <p class="text">I work in such programs as</p>
+        <section class="padding-inline padding-block" id="skills">
+            <h2 class="title title-m mb-25 text-center">Skills</h2>
+            <p class="text mb-50 text-center">I work in such programs as</p>
             
             <div class="skills-products">
 
                 <!-- Photoshop product -->
                 <div>
-                    <img src="./assets/images/ps.svg" alt="Photoshop icon">
-                    <p class="text text-m">Adobe Photoshop</p>
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/empty-star.svg" alt="Empty star icon">
-                    <img src="./assets/images/empty-star.svg" alt="Empty star icon">
-                    <img src="./assets/images/empty-star.svg" alt="Empty star icon">
-                </div>  
+                    <div class="skill-product mb-50">
+                        <img class="mb-25" src="./assets/images/ps.svg" alt="Photoshop icon">
+                        <p class="text text-m text-gray">Adobe Photoshop</p>
+                    </div>
+                    
+                    <div>
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/empty-star.svg" alt="Empty star icon">
+                        <img src="./assets/images/empty-star.svg" alt="Empty star icon">
+                        <img src="./assets/images/empty-star.svg" alt="Empty star icon">
+                    </div>  
+                </div>
+                    
 
                 <!-- Illustrator product -->
                 <div>
-                    <img src="./assets/images/ai.svg" alt="Illustrator icon">
-                    <p class="text text-m">Adobe Illustrator</p>
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/empty-star.svg" alt="Empty star icon">
-                    <img src="./assets/images/empty-star.svg" alt="Empty star icon">
+                    <div class="skill-product mb-50">
+                        <img class="mb-25" src="./assets/images/ai.svg" alt="Illustrator icon">
+                        <p class="text text-m text-gray">Adobe Illustrator</p>
+                    </div>
+                    
+                    <div>
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/empty-star.svg" alt="Empty star icon">
+                        <img src="./assets/images/empty-star.svg" alt="Empty star icon">
+                    </div>
+                    
                 </div>  
 
                 <!-- After Effects product -->
                 <div>
-                    <img src="./assets/images/ae.svg" alt="After Effects icon">
-                    <p class="text text-m">Adobe After Effects</p>
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/empty-star.svg" alt="Empty star icon">
+                    <div class="skill-product mb-50">
+                        <img class="mb-25" src="./assets/images/ae.svg" alt="After Effects icon">
+                        <p class="text text-m text-gray">Adobe After Effects</p> 
+                    </div>
+                    
+                    <div>
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/empty-star.svg" alt="Empty star icon">
+                    </div>
+                    
                 </div>  
 
                 <!-- Figma product -->
                 <div>
-                    <img src="./assets/images/figma.svg" alt="Figma icon">
-                    <p>Figma</p>
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
-                    <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                    <div class="skill-product mb-50">
+                        <img class="mb-25" src="./assets/images/figma.svg" alt="Figma icon">
+                        <p class="text text-m text-gray">Figma</p>
+                    </div>
+                    
+                    <div>
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">
+                        <img src="./assets/images/filled-star.svg" alt="Filled star icon">  
+                    </div>
+                    
                 </div>
             </div>
         </section> 
 
         <!-- Portfolio -->
-        <section class="padding-inline" id="portfolio">
-            <h2 class="title title-m">Portfolio</h2>  
+        <section class="padding-inline padding-block bg-gray" id="portfolio">
+            <h2 class="title title-m mb-50 text-center">Portfolio</h2>  
 
             <!-- Fashion Store -->
-            <article>
-                <img src="./assets/images/fashion-store.png" alt="Portfolio image" width="100%">
-                <p class="text">Online fashion store - Homepage</p>
+            <article class="mb-70">
+                <img class="mb-40" src="./assets/images/fashion-store.png" alt="Portfolio image" width="100%">
+                <p class="text text-center">Online fashion store - Homepage</p>
             </article>  
 
             <!-- Reebok store -->
-            <article>
-                <img src="./assets/images/reebok_web.png" alt="Reebok image" width="100%">
-                <p class="text">Reebok Store - Concept</p>
+            <article class="mb-70">
+                <img class="mb-40" src="./assets/images/reebok_web.png" alt="Reebok image" width="100%">
+                <p class="text text-center">Reebok Store - Concept</p>
             </article>
             
             <!-- Braun landing -->
             <article>
-                <img src="./assets/images/braun-landing.png" alt="Braun image" width="100%">
-                <p class="text">Braun Landing Page - Concept</p>
+                <img class="mb-40" src="./assets/images/braun-landing.png" alt="Braun image" width="100%">
+                <p class="text text-center">Braun Landing Page - Concept</p>
             </article>
         </section>
     </main> 
 
     <!-- Site contacts -->
-    <footer class="padding-inline" id="contacts">
-        <h2 class="title title-m">Contacts</h2>
-        <p>Want to know more or just chat? You are welcome!</p>
-        <button>Send message</button>
-        
+    <footer class="padding-inline padding-block contacts" id="contacts">
         <div>
-            <img src="./assets/images/linkedin.svg" alt="Linkedin icon">
-            <img src="./assets/images/instagram.svg" alt="Instagram icon">
-            <img src="./assets/images/behance.svg" alt="Behance icon">
-            <img src="./assets/images/dribbble.svg" alt="Dribble icon">
-        </div>  
-        <p class="text text-m">Like me on LinkedIn, Instagram, Behance, Dribble</p>
+            <h2 class="title title-m text-center mb-25">Contacts</h2>
+            <p class="text text-center">Want to know more or just chat? You are welcome!</p>
+        </div>
+
+        <div class="contacts-links">
+            <button class="contacts-message-btn text">Send message</button>
+            <div class="contacts-social">
+                <img src="./assets/images/linkedin.svg" alt="Linkedin icon">
+                <img src="./assets/images/instagram.svg" alt="Instagram icon">
+                <img src="./assets/images/behance.svg" alt="Behance icon">
+                <img src="./assets/images/dribbble.svg" alt="Dribble icon">
+            </div>   
+        </div>
+
+        <p class="text text-m text-center text-gray">
+            <span class="contacts-follow">Like me on</span> 
+            <span class="contacts-follow">LinkedIn, Instagram, Behance,</span>
+            <span class="contacts-follow">Dribble</span>
+        </p>
     </footer>
 </body>
 </html>
